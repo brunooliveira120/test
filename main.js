@@ -5,14 +5,11 @@ const valorB = document.getElementById('valorB');
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault();
-
-    function confirmador(valorA,valorB){
         if(valorA.values >= valorB.values){
             return alert("Valor Digitado Invalido")
         } else {
             return alert("Valor Digitado Valido")
         }
-}
 })
 
 console.log(form);
