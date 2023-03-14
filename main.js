@@ -7,12 +7,10 @@ form.addEventListener('submit', (e) =>{
     e.preventDefault();
 
     function confirmador(valorA,valorB){
-        if(valorA < valorB){
-            return alert(`Valor= ` + valorA + ` é menor que valor B= ` + valorB)
-        }else if(valorA > valorB){
-            return alert(`Valor= ` + valorA + ` é igual que valor B= ` + valorB)
-        }else if(valorA == valorB){
-            return alert(`Valor= ` + valorA + ` é igual que valor B= ` + valorB)
+        if(valorA.values >= valorB.values){
+            return alert("Valor Digitado Invalido")
+        } else {
+            return alert("Valor Digitado Valido")
         }
 }
 })
